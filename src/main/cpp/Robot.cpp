@@ -5,6 +5,13 @@
 
 #include <frc/smartdashboard/SmartDashboard.h>
 
+Robot::Robot():
+    a_xbox(XBOX),
+    a_joystick(JOYSTICK)
+{
+
+}
+
 void Robot::RobotInit() {}
 
 void Robot::RobotPeriodic() {}

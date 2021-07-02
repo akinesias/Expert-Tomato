@@ -5,9 +5,15 @@
 
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
+#include <frc/Joystick.h>
+
+#include "Prefs.h"
+#include "TrainDrive.h"
 
 class Robot : public frc::TimedRobot {
  public:
+  
+  Robot();
   void RobotInit() override;
   void RobotPeriodic() override;
   void AutonomousInit() override;
@@ -20,5 +26,8 @@ class Robot : public frc::TimedRobot {
   void TestPeriodic() override;
 
  private:
+    
+    frc::Joystick a_xbox;
+    frc::Joystick a_joystick;
 
 };
